@@ -7,14 +7,18 @@
     <title>Manipulación básica</title>
 </head>
 <body>
-    <h1>Manipulación básica del DOM</h1>
+    <h1 class="color">Manipulación básica del DOM</h1>
 
-    <p>Esto es un párrafo/p>
+    <p>Esto es un párrafo</p>
     <p class="parrafo">Párrafo con class</p>
     <p id="idP">Párrafo con ID</p>
 
-    <input placeholder="Esto es un placeholder"/>
+    <input id="calculo1" placeholder="Ingresar el primer número"/>
+    <input id="calculo2" placeholder="Ingresar el segundo número"/>
 
+    <button id="btnCalcular" onclick="btnOnclick()">Calcular</button>
+
+    <p id="resultado"></p>
 
     <script src="./script.js"></script>
 </body>
