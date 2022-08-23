@@ -48,6 +48,8 @@ const input2 = document.getElementById('calculo2');
 const btn = document.getElementById('btnCalcular');
 pResult = document.getElementById('resultado');
 
+btn.addEventListener('click', btnOnclick);
+
 function btnOnclick(){
     const suma = (Number(input1.value)) + (Number(input2.value));
     pResult.innerText = 'Resultado: ' + suma;
