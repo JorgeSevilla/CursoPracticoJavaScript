@@ -43,14 +43,16 @@ idP.appendChild(img);//se envia como argumento en este caso la imágen
 //*****Escuchando Eventos desde JS */
 
 const h1 = document.querySelector('h1');
+const form = document.querySelector('form');
 const input1 = document.getElementById('calculo1');
 const input2 = document.getElementById('calculo2');
 const btn = document.getElementById('btnCalcular');
 pResult = document.getElementById('resultado');
 
-btn.addEventListener('click', btnOnclick);
+form.addEventListener('submit', sumarValues);
 
-function btnOnclick(){
+function sumarValues(event){
+    event.preventDefault();
     const suma = (Number(input1.value)) + (Number(input2.value));
     pResult.innerText = 'Resultado: ' + suma;
     //console.log("Evento de onclik");
